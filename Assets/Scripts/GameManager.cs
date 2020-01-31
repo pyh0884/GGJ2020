@@ -40,10 +40,10 @@ public class GameManager : MonoBehaviour
     {
         Cursor.visible = false;
         int sceneNum = SceneManager.GetActiveScene().buildIndex;
-        if (player == null && sceneNum != 0)
-        {
-            player = Instantiate(playerPrefab, spawnPos, new Quaternion());
-        }
+        //if (player == null && sceneNum != 0)
+        //{
+        //    player = Instantiate(playerPrefab, spawnPos, new Quaternion());
+        //}
     }
 }
 

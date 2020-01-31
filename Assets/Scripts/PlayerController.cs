@@ -9,15 +9,10 @@ public class PlayerController : MonoBehaviour
     #region variables
     Rigidbody2D playerRigidbody2D;
     Animator anim;
-    public float fallMultiplier = 1.4f;
-    [Header("current speed on X axis")]
-    public float speedX;
-    [Header("current speed on Y axis")]
-    public float speedY;
+    private float fallMultiplier = 1.4f;
     [Header("current direction on X axis")]
     public float horizontalDirection;//between -1~1
-    private float tempHorizontalDirection;
-    //public AudioManager am;
+    public AudioManager am;
     private Scene scene;
     [Header("distance from the ground")]
     [Range(0, 0.5f)]
@@ -28,23 +23,15 @@ public class PlayerController : MonoBehaviour
     [Header("ground mask")]
     public LayerMask groundLayer;
     public bool grounded;
-    [Header("start point of the ray")]
-    public Transform WallCheck;
-    public LayerMask WallLayer;
-    public bool HitWall;
     public GameObject GameOver;
-    public bool controllable = true;
-    #endregion
+    public bool controllable = true;    
     [Header("Speed")]
     public float HorizontalSpeed;
     public float jumpSpeed;
     Vector3 LeftDirection = new Vector3(0, 180, 0);
     Vector3 RightDirection = new Vector3(0, 0, 0);
     public Vector3 currentSpeed;
-    public bool canTurnAround;
-    private bool isPressing = false;
-    GameManager gm;
-
+#endregion
     void MovementX()
     {
         horizontalDirection = Input.GetAxisRaw("Horizontal");
@@ -95,31 +82,6 @@ public class PlayerController : MonoBehaviour
             Debug.DrawLine(groundCheck2.position, new Vector2(groundCheck2.position.x, groundCheck2.position.y - distance), Color.blue);
             grounded = (Physics2D.Linecast(start, end, groundLayer) || Physics2D.Linecast(groundCheck2.position, new Vector2(groundCheck2.position.x, groundCheck2.position.y - distance), groundLayer));
             return grounded;
-        }
-    }
-    RaycastHit2D hitPoint;
-    bool isWall
-    {
-        get
-        {
-            //Vector2 start = WallCheck.position;           
-            //Vector2 end = new Vector2(start.x + horizontalDirection<0? 1.5f:-1.5f, start.y);
-            Debug.DrawLine(new Vector2(gameObject.transform.position.x - 0.95f, gameObject.transform.position.y + 0.27f), WallCheck.position, Color.blue);
-            //HitWall = Physics2D.Linecast(new Vector2(gameObject.transform.position.x - 0.95f, gameObject.transform.position.y + 0.27f), WallCheck.position, WallLayer);
-            hitPoint = Physics2D.Linecast(new Vector2(gameObject.transform.position.x - 0.95f, gameObject.transform.position.y + 0.27f), WallCheck.position, WallLayer);
-
-            //if (HitWall)
-            //WallX =Physics2D.Linecast(new Vector2(gameObject.transform.position.x - 0.95f, gameObject.transform.position.y + 0.27f), WallCheck.position, WallLayer).collider.gameObject.transform.position.x;
-            HitWall = hitPoint.collider == null ? false : true;
-            return HitWall;
-        }
-    }
-    bool isGround2
-    {
-        get
-        {
-            Debug.DrawLine(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 0.27f), WallCheck.position, Color.blue);
-            return Physics2D.Linecast(new Vector2(gameObject.transform.position.x - 0.95f, gameObject.transform.position.y + 0.27f), WallCheck.position, groundLayer);
         }
     }
     public void die()
@@ -178,14 +140,6 @@ public class PlayerController : MonoBehaviour
     //        highFallTimer = 0;
     //    }
     //}
-    public void controllableOn()
-    {
-        controllable = true;
-    }
-    public void controllableOff()
-    {
-        controllable = false;
-    }
     void Start()
     {
         //gm = FindObjectOfType<GameManager>();
