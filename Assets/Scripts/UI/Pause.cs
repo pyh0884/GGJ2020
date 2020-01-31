@@ -16,7 +16,7 @@ public class Pause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Menu") && !paused)
+        if (Input.GetKeyDown(KeyCode.Escape) && !paused)
         {
             Cursor.visible = false;
 
@@ -25,7 +25,7 @@ public class Pause : MonoBehaviour
             cursor.SetActive(true);
             paused = true;
         }
-        else if ((Input.GetButtonDown("Menu")||Input.GetButtonDown("Cancel")) && paused)
+        else if (Input.GetKeyDown(KeyCode.Escape) && paused)
         {
             Cursor.visible = false;
 

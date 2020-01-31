@@ -34,23 +34,9 @@ public class AudioManager : MonoBehaviour
     }
     private void Start()
     {
-        Play("BGM0");
-        Play("BGM1");
-        Play("BGM2");
-        Play("BGM3");
-        Play("BGM4");
-        Play("PlayerRun");
+        Play("BGM");
     }
 
-    //    void Start()
-    //{
-    //    Debug.Log("Start");
-    //    Play("BGM1");
-    //    Play("BGM2");
-    //    Play("BGM3");
-    //    Play("BGM4");
-    //    Play("PlayerRun");
-    //}
     public void Mute(string name)
     {
 
