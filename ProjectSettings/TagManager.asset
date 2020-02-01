@@ -44,6 +44,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: FronterBG
+    uniqueID: 2658927929
+    locked: 0
   - name: DeadBody
     uniqueID: 805653371
     locked: 0
