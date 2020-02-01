@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2143024336080161991}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundCheckLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2143024336681607990}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundCheckRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 7598349799958763073}
   - component: {fileID: 7824909026311310352}
   - component: {fileID: 5635727474313180836}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerStandOnTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}

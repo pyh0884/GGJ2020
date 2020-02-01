@@ -58,7 +58,7 @@ public class CharacterController : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    protected bool isGround
+    public bool isGround
     {
         get
         {

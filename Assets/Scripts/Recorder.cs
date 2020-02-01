@@ -16,7 +16,7 @@ public class Recorder : MonoBehaviour
 {
     private ActionType currentActionHorizon;
     private ActionType currentActionVertical;
-    
+    private GameObject player;
 
     void Start()
     {
@@ -25,16 +25,18 @@ public class Recorder : MonoBehaviour
 
     void Update()
     {
+        if (player == null)
+            player = GameObject.FindGameObjectWithTag("Player");
         DetectInput();
     }
 
     // Record current action
-    private void SendActionHorizon(ActionType action, float time)
+    public void SendActionHorizon(ActionType action, float time)
     {
         currentActionHorizon = action;
         Replayer.Records[GameManager.turn].Add(new Record(currentActionHorizon, currentActionVertical, time));
     }
-    private void SendActionVertical(ActionType action, float time)
+    public void SendActionVertical(ActionType action, float time)
     {
         currentActionVertical = action;
         Replayer.Records[GameManager.turn].Add(new Record(currentActionHorizon, currentActionVertical, time));
@@ -58,15 +60,18 @@ public class Recorder : MonoBehaviour
             SendActionHorizon(ActionType.IDLE, Time.timeSinceLevelLoad);
         }
 
-        // Jump
+        // Jump 
+
         if (Input.GetButtonDown("Jump") && currentActionVertical != ActionType.JUMP)
         {
-            SendActionVertical(ActionType.JUMP, Time.timeSinceLevelLoad);
+            if (player.GetComponent<PlayerController>().isGround)
+                SendActionVertical(ActionType.JUMP, Time.timeSinceLevelLoad);
         }
         if (Input.GetButtonUp("Jump") && currentActionVertical != ActionType.IDLE)
         {
             SendActionVertical(ActionType.IDLE, Time.timeSinceLevelLoad);
         }
+        
     }
 
     public void InitSingleRecord()
