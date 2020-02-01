@@ -78,17 +78,18 @@ public class Replayer : MonoBehaviour
         else if (Records[index].Count <= indexes[index] && !ended[index])
         {
             ended[index] = true;
-            DeadBodies[index].AddComponent<CannonBullet>();
-            DeadBodies[index].layer = 11;
+            //DeadBodies[index].AddComponent<CannonBullet>();
+            //DeadBodies[index].layer = 11;
             return;
         }
+ 
 
         int i = indexes[index];
         Record tmpr = Records[index][i];
         if (Time.timeSinceLevelLoad >= tmpr.time)
         {
             indexes[index]++;
-            var ctrl = DeadBodies[index].GetComponent<CharacterController>();
+            var ctrl = DeadBodies[index].GetComponent<DeadBody>();
             // Horizon
             if (tmpr.currentActionHorizon == ActionType.IDLE)
                 ctrl.ChangeDirection(0);
@@ -109,4 +110,18 @@ public class Replayer : MonoBehaviour
         }
     }
 
+    
+    // end a certain body
+    public void EndLife(GameObject obj)
+    {
+        for(int i = 0; i < GameManager.turn; i++)
+        {
+            if (DeadBodies[i].Equals(obj))
+            {
+                ended[i] = true;
+                obj.GetComponent<DeadBody>().ChangeDirection(0);
+            }
+        }
+    }
+    
 }
