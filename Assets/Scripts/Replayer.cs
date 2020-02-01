@@ -21,16 +21,18 @@ public class Replayer : MonoBehaviour
 {
     
     public static List<List<Record>> Records = new List<List<Record>>() {new List<Record>()};
+    //public static List<bool> underControll;
     public GameObject Character;
     public Vector3 StartPoint;
 
     private List<GameObject> DeadBodies;
     private List<int> indexes;
+    private List<bool> ended;
     
 
     void Start()
     {
-        
+
     }
 
     void Update()
@@ -42,12 +44,16 @@ public class Replayer : MonoBehaviour
     public void InitCharacters()
     {
         DeadBodies = new List<GameObject>();
+        //underControll = new List<bool>();
+        ended = new List<bool>();
         indexes = new List<int>();
         for (int i = 0; i < GameManager.turn; i++)
         {
             GameObject tmpG = Instantiate(Character, StartPoint, Quaternion.Euler(0, 0, 0));
             DeadBodies.Add(tmpG);
             indexes.Add(0);
+            //underControll.Add(true);
+            ended.Add(false);
         }
         
     }
@@ -67,8 +73,15 @@ public class Replayer : MonoBehaviour
     // if reached the recorded time, let the dead body do certain action
     private void TryDoAction(int index)
     {
-        if (Records[index] == null || Records[index].Count <= indexes[index])
+        if (Records[index] == null || ended[index])
             return;
+        else if (Records[index].Count <= indexes[index] && !ended[index])
+        {
+            ended[index] = true;
+            DeadBodies[index].AddComponent<CannonBullet>();
+            DeadBodies[index].layer = 11;
+            return;
+        }
 
         int i = indexes[index];
         Record tmpr = Records[index][i];

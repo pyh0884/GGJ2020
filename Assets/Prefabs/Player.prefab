@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7123124327563669256}
   - component: {fileID: 992263692023946159}
   - component: {fileID: 3468864567049291510}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: CatchRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8697369604918326558}
   - component: {fileID: 7470519605169600763}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Trajectory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 4626045540456284267}
   - component: {fileID: 4626045540456284266}
   - component: {fileID: 1026076538255615059}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -397,7 +397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4626045540486640061}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheckRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4626045541074312780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheckLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4908392518234255576}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Emit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
