@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 539115390}
   - component: {fileID: 539115393}
   - component: {fileID: 539115394}
+  - component: {fileID: 539115395}
   m_Layer: 0
   m_Name: CeilingLamp
   m_TagString: Untagged
@@ -454,6 +455,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canDrop: 0
   IdealMass: 100
+--- !u!114 &539115395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539115389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9798cbddbfb6744b2e1292c9a0b4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDrop: 0
+  IdealMass: 100
 --- !u!1 &713423157
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +480,7 @@ GameObject:
   - component: {fileID: 713423158}
   - component: {fileID: 713423160}
   - component: {fileID: 713423159}
+  - component: {fileID: 713423161}
   m_Layer: 0
   m_Name: Rod
   m_TagString: Untagged
@@ -562,6 +578,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &713423161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713423157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87353f19226623e499acd4beee8dfb21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyDelayTime: 0.5
 --- !u!1 &1034693807
 GameObject:
   m_ObjectHideFlags: 0
