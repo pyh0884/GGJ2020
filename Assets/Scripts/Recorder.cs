@@ -17,6 +17,7 @@ public class Recorder : MonoBehaviour
     private ActionType currentActionHorizon;
     private ActionType currentActionVertical;
     private GameObject player;
+    public static bool isQTEJump;
 
     void Start()
     {
@@ -28,6 +29,7 @@ public class Recorder : MonoBehaviour
         if (player == null)
             player = GameObject.FindGameObjectWithTag("Player");
         DetectInput();
+        DetectQTEJump();
     }
 
     // Record current action
@@ -78,5 +80,14 @@ public class Recorder : MonoBehaviour
     {
         currentActionHorizon = ActionType.IDLE;
         currentActionVertical = ActionType.IDLE;
+    }
+
+    private void DetectQTEJump()
+    {
+        if (isQTEJump)
+        {
+            isQTEJump = false;
+            SendActionVertical(ActionType.JUMP, Time.timeSinceLevelLoad);
+        }
     }
 }

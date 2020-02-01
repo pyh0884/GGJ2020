@@ -31,24 +31,6 @@ public class CharacterController : MonoBehaviour
 
     protected bool jumping;
 
-    void Start()
-    {
-        horizontalDirection = 0;
-        InitIt();
-    }
-
-    void Update()
-    {
-        TryFalling();
-    }
-
-    void FixedUpdate()
-    {
-        if (Time.timeScale != 0)
-        {
-            MoveHorizon();
-        }
-    }
 
 
     protected void InitIt()
