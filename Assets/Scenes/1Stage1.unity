@@ -328,7 +328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &539115390
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 713423160}
   - component: {fileID: 713423159}
   - component: {fileID: 713423161}
+  - component: {fileID: 713423162}
   m_Layer: 0
   m_Name: Rod
   m_TagString: Untagged
@@ -591,6 +592,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DestroyDelayTime: 0.5
+--- !u!50 &713423162
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713423157}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1034693807
 GameObject:
   m_ObjectHideFlags: 0

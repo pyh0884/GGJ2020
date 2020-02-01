@@ -16,4 +16,6 @@ public class RodController : MonoBehaviour
             Destroy(gameObject, DestroyDelayTime);
         }
     }
+
+    
 }
