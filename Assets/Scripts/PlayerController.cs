@@ -160,7 +160,7 @@ public class PlayerController : CharacterController
         if (Input.GetKeyDown(KeyCode.Y))
         {
             die();
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         //////// test end //////////////

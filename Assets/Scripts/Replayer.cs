@@ -27,7 +27,7 @@ public class Replayer : MonoBehaviour
 
     private List<GameObject> DeadBodies;
     private List<int> indexes;
-    private List<bool> ended;
+    public static List<bool> ended;
     
 
     void Start()
@@ -50,6 +50,7 @@ public class Replayer : MonoBehaviour
         for (int i = 0; i < GameManager.turn; i++)
         {
             GameObject tmpG = Instantiate(Character, StartPoint, Quaternion.Euler(0, 0, 0));
+            tmpG.GetComponent<DeadBody>().number = i;
             DeadBodies.Add(tmpG);
             indexes.Add(0);
             //underControll.Add(true);
@@ -82,6 +83,7 @@ public class Replayer : MonoBehaviour
             DeadBodies[index].layer = 11;
             return;
         }
+      
  
 
         int i = indexes[index];
@@ -110,7 +112,7 @@ public class Replayer : MonoBehaviour
         }
     }
 
-    
+    /* ABANDON
     // end a certain body
     public void EndLife(GameObject obj)
     {
@@ -126,5 +128,6 @@ public class Replayer : MonoBehaviour
             }
         }
     }
+    */
     
 }

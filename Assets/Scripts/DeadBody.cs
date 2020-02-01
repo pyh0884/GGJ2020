@@ -5,12 +5,14 @@ using UnityEngine;
 public class DeadBody : CharacterController
 {
     //public bool isDead;
-    
+    public int number;
+
     void Start()
     {
         horizontalDirection = 0;
         InitIt();
         //isDead = false;
+        
     }
 
     void Update()

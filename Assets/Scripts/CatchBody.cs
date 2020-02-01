@@ -10,9 +10,13 @@ public class CatchBody : MonoBehaviour
     {
         if (collision.gameObject.layer == 11) 
         {
+            //Debug.Log("trigger");
             if (Input.GetKeyDown(KeyCode.Mouse0)) 
             {
-                FindObjectOfType<Replayer>().GetComponent<Replayer>().EndLife(collision.gameObject);
+                //FindObjectOfType<Replayer>().GetComponent<Replayer>().EndLife(collision.gameObject);
+                var tmp = collision.gameObject.GetComponent<DeadBody>();
+                Replayer.ended[tmp.number] = true;
+                tmp.ChangeDirection(0);
                 pc.Bullet = collision.gameObject;
                 collision.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
                 pc.CanShoot = true;
