@@ -99,7 +99,7 @@ public class CharacterController : MonoBehaviour
 
     protected void TryFalling()
     {
-        if (!isGround && playerRigidbody2D.velocity.y <= 0 && !Connected) //||(isGround&&playerRigidbody2D.velocity.y==0))
+        if (!isGround && playerRigidbody2D.velocity.y <= 0 /*&& !Connected*/) //||(isGround&&playerRigidbody2D.velocity.y==0))
         {
             jumping = false;
             anim.SetBool("Fall", true);
