@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 322a720f742e19b4bb0ef023df7ce0ba
+guid: b47b49ecdb233aa4496f4a92b0df7f77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1544377514606141809
-    second: dead_walk_0
+      213: 4367506293216130794
+    second: tremble_0
   - first:
-      213: -2220522917992803312
-    second: dead_walk_1
+      213: -6731223684427730144
+    second: tremble_1
   - first:
-      213: 3778228988144861947
-    second: dead_walk_2
+      213: 1976614375312382232
+    second: tremble_2
   - first:
-      213: -9060838420308823999
-    second: dead_walk_3
-  - first:
-      213: -2224046482557862595
-    second: dead_walk_4
-  - first:
-      213: -8661247684787912402
-    second: dead_walk_5
+      213: 9048595266070562773
+    second: tremble_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dead_walk_0
+      name: tremble_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 264
-        height: 264
+        width: 302
+        height: 303
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8edcca35d4419ae0800000000000000
-      internalID: -1544377514606141809
+      spriteID: ae63e6965df7c9c30800000000000000
+      internalID: 4367506293216130794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_walk_1
+      name: tremble_1
       rect:
         serializedVersion: 2
-        x: 264
+        x: 302
         y: 0
-        width: 264
-        height: 264
+        width: 302
+        height: 303
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 014dc61cb2e1f21e0800000000000000
-      internalID: -2220522917992803312
+      spriteID: 0233df9f8b3e592a0800000000000000
+      internalID: -6731223684427730144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_walk_2
+      name: tremble_2
       rect:
         serializedVersion: 2
-        x: 528
+        x: 604
         y: 0
-        width: 264
-        height: 264
+        width: 302
+        height: 303
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf2457e2f37fe6430800000000000000
-      internalID: 3778228988144861947
+      spriteID: 819dc624d485e6b10800000000000000
+      internalID: 1976614375312382232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_walk_3
+      name: tremble_3
       rect:
         serializedVersion: 2
-        x: 792
+        x: 906
         y: 0
-        width: 264
-        height: 264
+        width: 302
+        height: 303
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,50 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 140f74e867f614280800000000000000
-      internalID: -9060838420308823999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dead_walk_4
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3d7e23f1899221e0800000000000000
-      internalID: -2224046482557862595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dead_walk_5
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 0
-        width: 264
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e21ca84be111dc780800000000000000
-      internalID: -8661247684787912402
+      spriteID: 5d7ca66f371139d70800000000000000
+      internalID: 9048595266070562773
       vertices: []
       indices: 
       edges: []

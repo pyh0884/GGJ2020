@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: 322a720f742e19b4bb0ef023df7ce0ba
+guid: 6375849ec4bc5d144aab7d89e7ae56aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1544377514606141809
-    second: dead_walk_0
+      213: 2298628778690730905
+    second: dead_main_0
   - first:
-      213: -2220522917992803312
-    second: dead_walk_1
+      213: 7443682613756725686
+    second: dead_main_1
   - first:
-      213: 3778228988144861947
-    second: dead_walk_2
+      213: -8721022061995240709
+    second: dead_main_2
   - first:
-      213: -9060838420308823999
-    second: dead_walk_3
+      213: -9099597634920228961
+    second: dead_main_3
   - first:
-      213: -2224046482557862595
-    second: dead_walk_4
+      213: -4151111623650301242
+    second: dead_main_4
   - first:
-      213: -8661247684787912402
-    second: dead_walk_5
+      213: -20263136632810671
+    second: dead_main_5
+  - first:
+      213: -7124122078241006054
+    second: dead_main_6
+  - first:
+      213: 5540432305182257968
+    second: dead_main_7
+  - first:
+      213: 7893207890025119028
+    second: dead_main_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dead_walk_0
+      name: dead_main_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 264
-        height: 264
+        width: 258
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8edcca35d4419ae0800000000000000
-      internalID: -1544377514606141809
+      spriteID: 99bd95012be56ef10800000000000000
+      internalID: 2298628778690730905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_walk_1
+      name: dead_main_1
       rect:
         serializedVersion: 2
-        x: 264
+        x: 258
         y: 0
-        width: 264
-        height: 264
+        width: 258
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 014dc61cb2e1f21e0800000000000000
-      internalID: -2220522917992803312
+      spriteID: 6b988bd16e54d4760800000000000000
+      internalID: 7443682613756725686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_walk_2
+      name: dead_main_2
       rect:
         serializedVersion: 2
-        x: 528
+        x: 516
         y: 0
-        width: 264
-        height: 264
+        width: 258
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf2457e2f37fe6430800000000000000
-      internalID: 3778228988144861947
+      spriteID: bf2dd6cf3a4b8f680800000000000000
+      internalID: -8721022061995240709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_walk_3
+      name: dead_main_3
       rect:
         serializedVersion: 2
-        x: 792
+        x: 774
         y: 0
-        width: 264
-        height: 264
+        width: 258
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 140f74e867f614280800000000000000
-      internalID: -9060838420308823999
+      spriteID: f97589ba92cb7b180800000000000000
+      internalID: -9099597634920228961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_walk_4
+      name: dead_main_4
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1032
         y: 0
-        width: 264
-        height: 264
+        width: 258
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3d7e23f1899221e0800000000000000
-      internalID: -2224046482557862595
+      spriteID: 6ca2459c8f94466c0800000000000000
+      internalID: -4151111623650301242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_walk_5
+      name: dead_main_5
       rect:
         serializedVersion: 2
-        x: 1320
+        x: 1290
         y: 0
-        width: 264
-        height: 264
+        width: 258
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +232,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e21ca84be111dc780800000000000000
-      internalID: -8661247684787912402
+      spriteID: 15357fad8c208bff0800000000000000
+      internalID: -20263136632810671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dead_main_6
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 0
+        width: 258
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e5ded07b8022d90800000000000000
+      internalID: -7124122078241006054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dead_main_7
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 0
+        width: 258
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033bc7cb3d193ec40800000000000000
+      internalID: 5540432305182257968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dead_main_8
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 0
+        width: 258
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43df14781ce4a8d60800000000000000
+      internalID: 7893207890025119028
       vertices: []
       indices: 
       edges: []

@@ -20,6 +20,24 @@ TextureImporter:
   - first:
       213: -398839310998960881
     second: dead_wink_5
+  - first:
+      213: 1087191304476743037
+    second: dead_wink_0
+  - first:
+      213: 6131145513109608340
+    second: dead_wink_1
+  - first:
+      213: 2987836676905312548
+    second: dead_wink_2
+  - first:
+      213: 4163432295436019637
+    second: dead_wink_3
+  - first:
+      213: -3504013584455005002
+    second: dead_wink_4
+  - first:
+      213: 6095652254950844849
+    second: dead_wink_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -63,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,7 +127,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 258
+        width: 260
         height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -118,8 +136,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 211f3715f05c0f520800000000000000
-      internalID: 2733901643395625234
+      spriteID: d75da323bba761f00800000000000000
+      internalID: 1087191304476743037
       vertices: []
       indices: 
       edges: []
@@ -128,9 +146,9 @@ TextureImporter:
       name: dead_wink_1
       rect:
         serializedVersion: 2
-        x: 258
+        x: 260
         y: 0
-        width: 258
+        width: 260
         height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -139,8 +157,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41199fc18b43883d0800000000000000
-      internalID: -3204253169509363436
+      spriteID: 497d0272c54361550800000000000000
+      internalID: 6131145513109608340
       vertices: []
       indices: 
       edges: []
@@ -149,9 +167,9 @@ TextureImporter:
       name: dead_wink_2
       rect:
         serializedVersion: 2
-        x: 516
+        x: 520
         y: 0
-        width: 258
+        width: 260
         height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79a71bd932be9f030800000000000000
-      internalID: 3529110321223531159
+      spriteID: 42123dd90ade67920800000000000000
+      internalID: 2987836676905312548
       vertices: []
       indices: 
       edges: []
@@ -170,9 +188,9 @@ TextureImporter:
       name: dead_wink_3
       rect:
         serializedVersion: 2
-        x: 774
+        x: 780
         y: 0
-        width: 258
+        width: 260
         height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,8 +199,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d7b21b3c9337c340800000000000000
-      internalID: 4883929067005589458
+      spriteID: 5b76ad72d9b77c930800000000000000
+      internalID: 4163432295436019637
       vertices: []
       indices: 
       edges: []
@@ -191,9 +209,9 @@ TextureImporter:
       name: dead_wink_4
       rect:
         serializedVersion: 2
-        x: 1032
+        x: 1040
         y: 0
-        width: 258
+        width: 260
         height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,8 +220,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0533eabef06fb1fb0800000000000000
-      internalID: -4675873239855123632
+      spriteID: 6bc8a62c53e3f5fc0800000000000000
+      internalID: -3504013584455005002
       vertices: []
       indices: 
       edges: []
@@ -212,9 +230,9 @@ TextureImporter:
       name: dead_wink_5
       rect:
         serializedVersion: 2
-        x: 1290
+        x: 1300
         y: 0
-        width: 258
+        width: 260
         height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -223,8 +241,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f05027182c9077af0800000000000000
-      internalID: -398839310998960881
+      spriteID: 1b967a20e6b189450800000000000000
+      internalID: 6095652254950844849
       vertices: []
       indices: 
       edges: []

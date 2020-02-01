@@ -39,7 +39,7 @@ public class StandOnTo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Foot" && collision.transform.position.y < transform.position.y) 
+        if (collision.gameObject.tag == "Foot" && collision.transform.parent.GetComponent<Rigidbody2D>().velocity.y<=0) 
         {
             // only when player is right above it
             Vector2 me = new Vector2(transform.position.x, transform.position.y);
