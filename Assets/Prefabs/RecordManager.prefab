@@ -58,4 +58,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Character: {fileID: 2143024336703688991, guid: 164d645261ec220488b2f664c20c0b01,
     type: 3}
-  StartPoint: {x: 0, y: 0, z: 0}
+  StartPoint: {x: -4.78, y: 1.63, z: 0}

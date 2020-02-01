@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4626045540456285076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.63, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 5.2394257, y: 5.2394257, z: 5.2394257}
   m_Children:
   - {fileID: 4626045541074312780}
   - {fileID: 4626045540486640061}
@@ -55,7 +55,7 @@ MonoBehaviour:
   groundCheck2: {fileID: 4626045540486640061}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 256
   grounded: 0
   HorizontalSpeed: 7.75
   jumpSpeed: 11.5
@@ -139,8 +139,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 254673755
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2be53f7011fe74f02a6f395a6f78b5be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -166,18 +166,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.09637587, y: 0.010282844}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.06, y: 4.21}
+    oldSize: {x: 0.506, y: 0.421}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.31809965, y: 0.30828917}
   m_EdgeRadius: 0
 --- !u!1 &4626045540486640058
 GameObject:
@@ -203,7 +203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4626045540486640058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0787, y: -0.07, z: 0}
+  m_LocalPosition: {x: 0.053, y: -0.133, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4626045540456284264}
@@ -233,7 +233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4626045541074312781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0795, y: -0.07, z: 0}
+  m_LocalPosition: {x: -0.249, y: -0.136, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4626045540456284264}
