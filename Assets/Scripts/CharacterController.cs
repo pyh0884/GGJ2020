@@ -64,12 +64,12 @@ public class CharacterController : MonoBehaviour
     {
         if (horizontalDirection != 0 && isGround)
         {
-            anim.SetBool("Run", true);
+            anim.SetBool("isWalking", true);
             //am.UnMute("PlayerRun");
         }
         else
         {
-            anim.SetBool("Run", false);
+            anim.SetBool("isWalking", false);
             //am.Mute("PlayerRun");
         }
         if (horizontalDirection < 0)
@@ -91,7 +91,7 @@ public class CharacterController : MonoBehaviour
     public void Jump()
     {
         //Debug.Log("Jump");
-        anim.SetTrigger("Jump");
+        //anim.SetTrigger("Jump");
         //am.Play("Jump");
         jumping = true;
         playerRigidbody2D.velocity = new Vector2(playerRigidbody2D.velocity.x, jumpSpeed);
@@ -102,12 +102,10 @@ public class CharacterController : MonoBehaviour
         if (!isGround && playerRigidbody2D.velocity.y <= 0 /*&& !Connected*/) //||(isGround&&playerRigidbody2D.velocity.y==0))
         {
             jumping = false;
-            anim.SetBool("Fall", true);
             playerRigidbody2D.gravityScale = fallMultiplier;
         }
         else
         {
-            anim.SetBool("Fall", false);
             playerRigidbody2D.gravityScale = 1;
         }
     }

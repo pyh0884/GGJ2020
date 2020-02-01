@@ -60,6 +60,7 @@ public class PlayerController : CharacterController
     }
     public void CannonShoot()
     {
+        anim.SetBool("Throw", false);
         CannonPressed = false;
         CannonAiming = false;
         TrajectoryLine.enabled = false;
@@ -92,13 +93,19 @@ public class PlayerController : CharacterController
 
     public void die()
     {
-        Time.timeScale = 0;
-        gm.AddTurn();
+        anim.SetTrigger("Die");
+        controllable = false;
         // TODO: Start again
 
         //GameOver.SetActive(true);
         //CursorVis.SetActive(true);
         //Destroy(gameObject);
+    }
+    public void respawn()
+    {
+        Time.timeScale = 0;
+        gm.AddTurn();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void TryJump()
@@ -160,7 +167,7 @@ public class PlayerController : CharacterController
         if (Input.GetKeyDown(KeyCode.Y))
         {
             die();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            
         }
 
         //////// test end //////////////

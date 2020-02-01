@@ -81,6 +81,7 @@ public class Replayer : MonoBehaviour
             ended[index] = true;
             DeadBodies[index].AddComponent<CannonBullet>();
             DeadBodies[index].layer = 11;
+            DeadBodies[index].GetComponent<Animator>().SetTrigger("Die");
             return;
         }
       
