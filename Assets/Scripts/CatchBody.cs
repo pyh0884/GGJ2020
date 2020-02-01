@@ -8,7 +8,7 @@ public class CatchBody : MonoBehaviour
     public PlayerController pc;
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 11) 
+        if (collision.gameObject.layer == 11|| collision.gameObject.layer == 9) 
         {
             //Debug.Log("trigger");
             if (Input.GetKeyDown(KeyCode.Mouse0)) 
@@ -16,6 +16,11 @@ public class CatchBody : MonoBehaviour
                 //FindObjectOfType<Replayer>().GetComponent<Replayer>().EndLife(collision.gameObject);
                 var tmp = collision.gameObject.GetComponent<DeadBody>();
                 Replayer.ended[tmp.number] = true;
+                if (collision.gameObject.layer == 9)
+                {
+                    collision.gameObject.AddComponent<CannonBullet>();
+                    collision.gameObject.layer = 11;
+                }
                 tmp.ChangeDirection(0);
                 pc.Bullet = collision.gameObject;
                 collision.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
