@@ -1223,11 +1223,6 @@ PrefabInstance:
       propertyPath: am
       value: 
       objectReference: {fileID: 1772439935}
-    - target: {fileID: 4626045540456284265, guid: 0e852abdfa3284c4d9ca546fbf8f0a99,
-        type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
     - target: {fileID: 4626045540456285076, guid: 0e852abdfa3284c4d9ca546fbf8f0a99,
         type: 3}
       propertyPath: m_Name
