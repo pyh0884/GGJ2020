@@ -113,15 +113,6 @@ public class PlayerController : CharacterController
     {
         if (Time.timeScale != 0 && controllable)
         {
-            if (isGround)//|| OnBoss)
-            {
-                anim.SetBool("Land", true);
-                //InsDust();
-            }
-            else
-            {
-                anim.SetBool("Land", false);
-            }
             if ((isGround) && JumpKey ) //((isGround || OnBoss) && JumpKey &&!isAttacking)
             {
                 jumping = true;

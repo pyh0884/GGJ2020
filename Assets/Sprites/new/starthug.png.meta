@@ -124,8 +124,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 292
-        height: 290
+        width: 262
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,8 +133,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7197d152a2d328f0800000000000000
-      internalID: -566377533518933636
+      spriteID: 2377c7ee5eaf00bf0800000000000000
+      internalID: -360012104734050510
       vertices: []
       indices: 
       edges: []
@@ -143,10 +143,10 @@ TextureImporter:
       name: starthug_1
       rect:
         serializedVersion: 2
-        x: 292
+        x: 262
         y: 0
-        width: 292
-        height: 290
+        width: 262
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40e8fb7a4cde4f150800000000000000
-      internalID: 5905606440273284612
+      spriteID: 4c6378d6f238bbb40800000000000000
+      internalID: 5457099613213767364
       vertices: []
       indices: 
       edges: []
@@ -164,10 +164,10 @@ TextureImporter:
       name: starthug_2
       rect:
         serializedVersion: 2
-        x: 584
+        x: 524
         y: 0
-        width: 292
-        height: 290
+        width: 262
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a893528635d8c680800000000000000
-      internalID: -8734497047193610080
+      spriteID: f055c644fee5367e0800000000000000
+      internalID: -1773469446515698417
       vertices: []
       indices: 
       edges: []
@@ -185,10 +185,10 @@ TextureImporter:
       name: starthug_3
       rect:
         serializedVersion: 2
-        x: 876
+        x: 786
         y: 0
-        width: 292
-        height: 290
+        width: 262
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,8 +196,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b551146facdb17f0800000000000000
-      internalID: -640675876113918539
+      spriteID: 47361b6052dbcfd40800000000000000
+      internalID: 5619574401775264628
       vertices: []
       indices: 
       edges: []
@@ -206,10 +206,10 @@ TextureImporter:
       name: starthug_4
       rect:
         serializedVersion: 2
-        x: 1168
+        x: 1048
         y: 0
-        width: 292
-        height: 290
+        width: 262
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,8 +217,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a0e5cc7a37bfc690800000000000000
-      internalID: -7579638186011926361
+      spriteID: 977ef31d1e8786110800000000000000
+      internalID: 1254385407496284025
       vertices: []
       indices: 
       edges: []
