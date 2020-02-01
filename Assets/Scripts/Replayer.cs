@@ -78,8 +78,8 @@ public class Replayer : MonoBehaviour
         else if (Records[index].Count <= indexes[index] && !ended[index])
         {
             ended[index] = true;
-            //DeadBodies[index].AddComponent<CannonBullet>();
-            //DeadBodies[index].layer = 11;
+            DeadBodies[index].AddComponent<CannonBullet>();
+            DeadBodies[index].layer = 11;
             return;
         }
  
@@ -116,10 +116,13 @@ public class Replayer : MonoBehaviour
     {
         for(int i = 0; i < GameManager.turn; i++)
         {
-            if (DeadBodies[i].Equals(obj))
+            if (DeadBodies[i].Equals(obj)&& ended[i] == false)
             {
                 ended[i] = true;
                 obj.GetComponent<DeadBody>().ChangeDirection(0);
+                //DeadBodies[i].AddComponent<CannonBullet>();
+                //DeadBodies[i].layer = 11;
+
             }
         }
     }

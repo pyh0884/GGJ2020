@@ -12,6 +12,7 @@ public class CatchBody : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Mouse0)) 
             {
+                FindObjectOfType<Replayer>().GetComponent<Replayer>().EndLife(collision.gameObject);
                 pc.Bullet = collision.gameObject;
                 collision.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
                 pc.CanShoot = true;
