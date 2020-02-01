@@ -22,7 +22,7 @@ public class PlayerController : CharacterController
         horizontalDirection = Input.GetAxisRaw("Horizontal");
         if (horizontalDirection < 0) horizontalDirection = -1;
         else if (horizontalDirection > 0) horizontalDirection = 1;
-        if (Time.timeScale != 0 && controllable)
+        if (Time.timeScale != 0 && controllable) 
         {
             MoveHorizon();
         }

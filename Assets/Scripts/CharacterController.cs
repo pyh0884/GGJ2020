@@ -25,6 +25,7 @@ public class CharacterController : MonoBehaviour
     protected Vector3 LeftDirection = new Vector3(0, 180, 0);
     protected Vector3 RightDirection = new Vector3(0, 0, 0);
     public Vector3 currentSpeed;
+    public bool Connected;
 
     #endregion
 
@@ -73,7 +74,7 @@ public class CharacterController : MonoBehaviour
     // adjust horizonDireciton
     public void ChangeDirection(int direc)
     {
-        Debug.Log("Move");
+        //Debug.Log("Move");
         horizontalDirection = direc;
     }
 
@@ -98,9 +99,9 @@ public class CharacterController : MonoBehaviour
             playerRigidbody2D.transform.eulerAngles = RightDirection;
         }
         currentSpeed = new Vector3(HorizontalSpeed * horizontalDirection, playerRigidbody2D.velocity.y, 0);
-        if ((isGround) && !jumping) //((isGround || OnBoss) && !jumping)
+        if (isGround && !jumping && (!Connected || horizontalDirection != 0))    //((isGround || OnBoss) && !jumping)
             playerRigidbody2D.velocity = new Vector2(currentSpeed.x, 0);
-        else
+        else if (!Connected) 
             playerRigidbody2D.velocity = new Vector2(currentSpeed.x, playerRigidbody2D.velocity.y);
 
     }
@@ -110,6 +111,7 @@ public class CharacterController : MonoBehaviour
         Debug.Log("Jump");
         anim.SetTrigger("Jump");
         //am.Play("Jump");
+        jumping = true;
         playerRigidbody2D.velocity = new Vector2(playerRigidbody2D.velocity.x, jumpSpeed);
     }
 

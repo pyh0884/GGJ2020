@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
 
-        if (SceneManager.GetActiveScene().name == "__Main Menu")
+        if (SceneManager.GetActiveScene().name == "0Menu")
             Destroy(gameObject);
 
         if (instance == null)
