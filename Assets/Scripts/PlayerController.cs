@@ -16,7 +16,6 @@ public class PlayerController : CharacterController
     #endregion
 
     private GameManager gm;
-    public bool onOthers;
 
     void MovementX()
     {
@@ -61,7 +60,7 @@ public class PlayerController : CharacterController
             {
                 anim.SetBool("Land", false);
             }
-            if ((isGround || onOthers) && JumpKey ) //((isGround || OnBoss) && JumpKey &&!isAttacking)
+            if ((isGround) && JumpKey ) //((isGround || OnBoss) && JumpKey &&!isAttacking)
             {
                 jumping = true;
                 Jump();
