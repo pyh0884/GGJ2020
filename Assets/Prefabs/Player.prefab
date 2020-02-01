@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7123124327563669256}
   - component: {fileID: 992263692023946159}
   - component: {fileID: 3468864567049291510}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CatchRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8697369604918326558}
   - component: {fileID: 7470519605169600763}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Trajectory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -153,7 +153,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.11111069
+        value: 0.055553436
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -165,8 +165,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 1, g: 0.9957259, b: 0, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 0.78431374}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -182,16 +182,16 @@ LineRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
+      atime1: 26792
+      atime2: 55705
+      atime3: 65535
       atime4: 0
       atime5: 0
       atime6: 0
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
+      m_NumAlphaKeys: 4
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
   groundCheck2: {fileID: 4626045540486640061}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1536
   grounded: 0
   HorizontalSpeed: 7.75
   jumpSpeed: 11.5
@@ -397,7 +397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4626045540486640061}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: GroundCheckRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4626045541074312780}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: GroundCheckLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4908392518234255576}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Emit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
