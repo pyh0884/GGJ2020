@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
             CheckRecorder();
         }
 
-        Cursor.visible = false;
+        //Cursor.visible = false;
         int sceneNum = SceneManager.GetActiveScene().buildIndex;
         //if (player == null && sceneNum != 0)
         //{

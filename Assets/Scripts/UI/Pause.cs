@@ -18,7 +18,7 @@ public class Pause : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !paused)
         {
-            Cursor.visible = false;
+            //Cursor.visible = false;
 
             Time.timeScale = 0;            
             PauseMenu.SetActive(true);
@@ -27,7 +27,7 @@ public class Pause : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && paused)
         {
-            Cursor.visible = false;
+           // Cursor.visible = false;
 
             PauseMenu.SetActive(false);
             cursor.SetActive(false);
@@ -37,10 +37,10 @@ public class Pause : MonoBehaviour
     }
     public void resume()
     {
-        Cursor.visible = false;
+        //Cursor.visible = false;
 
         PauseMenu.SetActive(false);
-        cursor.SetActive(false);
+        //cursor.SetActive(false);
         Time.timeScale = 1;
         paused = false;
     }

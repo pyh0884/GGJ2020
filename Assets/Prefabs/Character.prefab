@@ -232,7 +232,7 @@ MonoBehaviour:
   groundCheck2: {fileID: 2143024336681607990}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1536
   grounded: 0
   HorizontalSpeed: 7.75
   jumpSpeed: 11.5

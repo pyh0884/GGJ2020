@@ -12,7 +12,12 @@ public class PlayerController : CharacterController
     private Scene scene;
     public GameObject GameOver;
     public bool controllable = true;
-    
+    public bool CanShoot;
+    public LineRenderer TrajectoryLine;
+    private bool CannonAiming = false;
+    private bool CannonPressed = false;
+    public GameObject EmitPoint;
+    public GameObject Bullet;
     #endregion
 
     private GameManager gm;
@@ -25,6 +30,55 @@ public class PlayerController : CharacterController
         if (Time.timeScale != 0 && controllable) 
         {
             MoveHorizon();
+        }
+    }
+    private float VelocityZ = 1 / 1.2f + 10 * 1.2f;
+    private float VelocityY;
+    private float VelocityX;
+    private bool CannonSkill;
+    public void CannonTrajectory()
+    {
+        TrajectoryLine.enabled = true;
+        TrajectoryLine.SetPosition(0, EmitPoint.transform.position);
+        VelocityX = (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - EmitPoint.transform.position.x) / 1.2f;
+        VelocityY = (Camera.main.ScreenToWorldPoint(Input.mousePosition).y - EmitPoint.transform.position.y) / 1.2f;
+        VelocityZ = 1 / 1.2f + 10 * 1.2f;
+        float i = 0.02f;
+        while (i < 1 && (Mathf.Abs(EmitPoint.transform.position.x + VelocityX * i * 1.75f - Camera.main.ScreenToWorldPoint(Input.mousePosition).x) > 0.2f || i < 0.65f))
+        {
+            TrajectoryLine.positionCount = Mathf.RoundToInt(i / 0.02f) + 1;
+            TrajectoryLine.SetPosition(Mathf.RoundToInt(i / 0.02f), new Vector3(EmitPoint.transform.position.x + VelocityX * i * 1.75f, EmitPoint.transform.position.y + (VelocityY * i + VelocityZ * i) * 1.95f, 0));
+            VelocityZ -= 20 * 0.02f;
+            i += 0.02f;
+        }
+        //for (float i = 0.02f; i < 1.5f; i += 0.02f)
+        //{
+        //    TrajectoryLine.positionCount = Mathf.RoundToInt(i / 0.02f) + 1;
+        //    TrajectoryLine.SetPosition(Mathf.RoundToInt(i / 0.02f), new Vector3(EmitPoint.transform.position.x + VelocityX * i * 1.75f, EmitPoint.transform.position.y + (VelocityY * i + VelocityZ * i) * 1.95f));
+        //    VelocityZ -= 20 * 0.02f;
+        //}
+    }
+    public void CannonShoot()
+    {
+        CannonPressed = false;
+        CannonAiming = false;
+        TrajectoryLine.enabled = false;
+        Bullet.GetComponent<CannonBullet>().StartShoot(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        CanShoot = false;
+    }
+    void CannonUpdate()
+    {
+        //Cannon按下左键蓄力
+        if (CanShoot && Input.GetKey(KeyCode.Mouse0)) 
+        {
+            CannonPressed = true;
+            CannonAiming = true;
+            Bullet.transform.position = EmitPoint.transform.position;
+        }
+        //Cannon松开左键发射
+        if ((CanShoot && Input.GetKeyUp(KeyCode.Mouse0) && CannonPressed) /*|| (Mp <= 5 && isSniper && pressed)*/)
+        {
+            CannonShoot();
         }
     }
 
@@ -70,20 +124,7 @@ public class PlayerController : CharacterController
 
         }
     }
-    //public void InsDust()
-    //{
 
-    //    if (highFallTimer >= 0.25f)
-    //    {
-    //        am.Play("PlayerLand");
-    //        Instantiate(DustEFX, transform.position, Quaternion.Euler(-90, 0, 0));
-    //        if (highFallTimer >= 1.2f)
-    //        {
-    //            st.GetComponent<ShakeTest>().StartVibration(0.05f, 0.05f, 0.1f);
-    //        }
-    //        highFallTimer = 0;
-    //    }
-    //}
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
@@ -107,7 +148,7 @@ public class PlayerController : CharacterController
     {
         //if (am == null)
         //    am = FindObjectOfType<AudioManager>();
-
+        CannonUpdate();
         TryJump();
         //if (isGround)
         //    playerRigidbody2D.gravityScale = 0;
@@ -119,7 +160,7 @@ public class PlayerController : CharacterController
         if (Input.GetKeyDown(KeyCode.Y))
         {
             die();
-            SceneManager.LoadScene("1Stage1");
+            SceneManager.LoadScene(1);
         }
 
         //////// test end //////////////
@@ -127,5 +168,10 @@ public class PlayerController : CharacterController
     private void FixedUpdate()
     {
         MovementX();
+        if (CannonAiming)
+        {
+            CannonTrajectory();
+        }
+
     }
 }
