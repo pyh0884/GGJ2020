@@ -94,6 +94,7 @@ public class PlayerController : CharacterController
     public void die()
     {
         anim.SetTrigger("Die");
+        playerRigidbody2D.velocity = Vector2.zero;
         controllable = false;
         // TODO: Start again
 
