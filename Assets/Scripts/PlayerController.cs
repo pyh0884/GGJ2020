@@ -89,6 +89,7 @@ public class PlayerController : CharacterController
     }
     public void die()
     {
+        am.Play("Die");
         anim.SetTrigger("Die");
         playerRigidbody2D.velocity = Vector2.zero;
         controllable = false;
@@ -131,7 +132,7 @@ public class PlayerController : CharacterController
         TryJump();
         if (Input.GetKeyDown(KeyCode.Y))
         {
-            am.Play("Die");
+
             die();
         }
     }
