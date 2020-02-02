@@ -80,6 +80,7 @@ public class PlayerController : CharacterController
         if ((CanShoot && Input.GetKeyUp(KeyCode.Mouse0) && CannonPressed) /*|| (Mp <= 5 && isSniper && pressed)*/)
         {
             CannonShoot();
+            am.Play("Throw");
         }
     }
 
@@ -117,6 +118,7 @@ public class PlayerController : CharacterController
             {
                 jumping = true;
                 Jump();
+                am.Play("Jump");
             }
 
             TryFalling();
@@ -133,7 +135,7 @@ public class PlayerController : CharacterController
     private void Awake()
     {
         Time.timeScale = 1;
-        //am = FindObjectOfType<AudioManager>();
+        am = FindObjectOfType<AudioManager>();
         //switch (SceneManager.GetActiveScene().buildIndex)
         //{
         //    case 3:
