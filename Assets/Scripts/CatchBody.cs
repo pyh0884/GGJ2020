@@ -10,9 +10,10 @@ public class CatchBody : MonoBehaviour
     {
         if (collision.gameObject.layer == 11|| collision.gameObject.layer == 9) 
         {
-            //Debug.Log("trigger");
-            if (Input.GetKeyDown(KeyCode.Mouse0) && !pc.CanShoot)  
+            if (Input.GetKeyDown(KeyCode.Mouse0) && !pc.CanShoot)
             {
+                Debug.Log("trigger");
+
                 transform.parent.GetComponent<Animator>().SetBool("Throw",true);
                 //FindObjectOfType<Replayer>().GetComponent<Replayer>().EndLife(collision.gameObject);
                 var tmp = collision.gameObject.GetComponent<DeadBody>();
@@ -20,6 +21,7 @@ public class CatchBody : MonoBehaviour
                 if (collision.gameObject.layer == 9)
                 {
                     collision.gameObject.AddComponent<CannonBullet>();
+                    collision.gameObject.GetComponent<DeadBody>().isDead = true;
                     collision.gameObject.layer = 11;
                     collision.gameObject.GetComponent<Animator>().SetTrigger("Die");
                 }

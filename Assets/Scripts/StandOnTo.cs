@@ -57,7 +57,7 @@ public class StandOnTo : MonoBehaviour
                 timeCnt = Time.unscaledTime;
                 Time.timeScale = 0;
                 // TODO: Show QTE Hint
-                Debug.Log("Press Jump to Jump!");
+                //Debug.Log("Press Jump to Jump!");
             //}
         }
     }

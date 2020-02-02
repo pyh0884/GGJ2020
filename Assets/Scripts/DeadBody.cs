@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DeadBody : CharacterController
 {
-    //public bool isDead;
+    public bool isDead = false;
     public int number;
 
     void Start()
@@ -17,12 +17,13 @@ public class DeadBody : CharacterController
 
     void Update()
     {
+        if (!isDead) 
         TryFalling();
     }
 
     void FixedUpdate()
     {
-        if (Time.timeScale != 0)
+        if (Time.timeScale != 0 && !isDead) 
         {
             MoveHorizon();
         }
