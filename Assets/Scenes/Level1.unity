@@ -2513,6 +2513,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2539873072151740899, guid: 59eeff1c4d5229f40845142a18a1abe4,
+        type: 3}
+      propertyPath: audios.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2539873072151740899, guid: 59eeff1c4d5229f40845142a18a1abe4,
+        type: 3}
+      propertyPath: audios.Array.data[4].name
+      value: LampFall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2539873072151740899, guid: 59eeff1c4d5229f40845142a18a1abe4,
+        type: 3}
+      propertyPath: audios.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 04edae58e90ad334c85b12db27167aa8, type: 3}
+    - target: {fileID: 2539873072151740899, guid: 59eeff1c4d5229f40845142a18a1abe4,
+        type: 3}
+      propertyPath: audios.Array.data[4].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2539873072151740899, guid: 59eeff1c4d5229f40845142a18a1abe4,
+        type: 3}
+      propertyPath: audios.Array.data[4].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2539873072151740899, guid: 59eeff1c4d5229f40845142a18a1abe4,
+        type: 3}
+      propertyPath: audios.Array.data[4].mixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd,
+        type: 2}
     - target: {fileID: 5069263792081179939, guid: 59eeff1c4d5229f40845142a18a1abe4,
         type: 3}
       propertyPath: m_LocalPosition.x
