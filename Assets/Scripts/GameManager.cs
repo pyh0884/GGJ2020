@@ -90,5 +90,12 @@ public class GameManager : MonoBehaviour
             RecorderInstance.GetComponent<Recorder>().InitSingleRecord();
         }
     }
+
+    public void Restart(){
+        Destroy(RecorderInstance);
+        recorderChecked=false;
+        turn=0;
+        Respawn();
+    }
 }
 

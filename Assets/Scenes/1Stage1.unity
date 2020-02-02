@@ -1237,39 +1237,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 255344700098081610, guid: 0fd0ebdbbe5b73e40910815706ab8287,
-        type: 3}
-      propertyPath: RecorderManager
-      value: 
-      objectReference: {fileID: 41658521102286630, guid: a8599cae2d2cca84a9a17ee718da6419,
-        type: 3}
-    - target: {fileID: 408331294149137680, guid: 0fd0ebdbbe5b73e40910815706ab8287,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1266549416696563370, guid: 0fd0ebdbbe5b73e40910815706ab8287,
         type: 3}
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 2364117758425533540, guid: 0fd0ebdbbe5b73e40910815706ab8287,
-        type: 3}
-      propertyPath: PauseMenu
-      value: 
-      objectReference: {fileID: 6427151798726816409, guid: 98ad0b19a1c174d8095f2fe4377a94da,
-        type: 3}
     - target: {fileID: 5490208552057982498, guid: 0fd0ebdbbe5b73e40910815706ab8287,
         type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d0a614b9c05b96540b717609f9539ae6, type: 2}
-    - target: {fileID: 6377727678404711127, guid: 0fd0ebdbbe5b73e40910815706ab8287,
-        type: 3}
-      propertyPath: PauseMenu
-      value: 
-      objectReference: {fileID: 6427151798726816409, guid: 98ad0b19a1c174d8095f2fe4377a94da,
-        type: 3}
     - target: {fileID: 7786463688678936373, guid: 0fd0ebdbbe5b73e40910815706ab8287,
         type: 3}
       propertyPath: m_LocalPosition.x
