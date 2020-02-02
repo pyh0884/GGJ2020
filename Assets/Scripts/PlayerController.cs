@@ -92,6 +92,7 @@ public class PlayerController : CharacterController
         anim.SetTrigger("Die");
         playerRigidbody2D.velocity = Vector2.zero;
         controllable = false;
+        respawn();
     }
     public void respawn()
     {
