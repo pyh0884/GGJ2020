@@ -7,7 +7,7 @@ public class CannonBullet : MonoBehaviour
     public Vector3 targetPos;
     public float xOffSet;
     public float yOffSet;
-    public float velocity = 20;//炮弹速度    
+    public float velocity = 20;
     public float velocityX;
     public float velocityY;
     public float velocityZ0;
@@ -18,10 +18,8 @@ public class CannonBullet : MonoBehaviour
     public bool start = false;
     private float timer = 0;
     public Collider2D explosion;
-    #region same height
     public float height = 1;
     public float TotalTime = 1.2f;
-
     public void StartShoot(Vector3 target)
     {
         screenX = transform.position.x;
@@ -43,19 +41,12 @@ public class CannonBullet : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        //timer += Time.fixedDeltaTime;
-        //if (timer > TotalTime)
-        //{
-        //    Destroy(gameObject);
-        //    explosion.enabled = true;
-        //}
         if (start)
         {
             screenX += velocityX * Time.fixedDeltaTime;
             screenY += velocityY * Time.fixedDeltaTime;
             velocityZ0 -= 20 * Time.fixedDeltaTime;
             screenZ -= velocityZ0 * Time.fixedDeltaTime;
-            //transform.position = new Vector3(screenX, screenY, screenZ);
             transform.position = new Vector3((screenX - xOffSet), (screenY - screenZ - yOffSet), 0);
         }
         if (Mathf.Abs(transform.position.x-targetPos.x)<0.5f&& Mathf.Abs(transform.position.y - targetPos.y) < 0.5f) 
@@ -64,41 +55,4 @@ public class CannonBullet : MonoBehaviour
             GetComponent<Rigidbody2D>().gravityScale = 1;
         }
     }
-    #endregion
-    //#region same velocity
-    //public void StartShoot(Vector3 target)
-    //{
-    //    start = true;
-    //    targetPos = target;
-    //    time = Mathf.Sqrt(Mathf.Pow(Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x, 2) + Mathf.Pow(Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y, 2)) / velocity;
-    //    velocityX = (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x) / time;
-    //    velocityY = (Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y) / time;
-    //    velocityZ0 = -20 / 2 * time;
-    //}
-    //void Start()
-    //{
-    //    screenX = transform.position.x;
-    //    screenY = transform.position.y;
-    //    screenZ = 0;
-    //}
-    //private void FixedUpdate()
-    //{
-    //    timer += Time.fixedDeltaTime;
-    //    if (timer > time)
-    //    {
-    //        Destroy(gameObject);
-    //        //instantiate(body);
-    //    }
-    //    if (start)
-    //    {
-    //        screenX += velocityX * Time.fixedDeltaTime;
-    //        screenY += velocityY * Time.fixedDeltaTime;
-    //        velocityZ0 += 20 * Time.fixedDeltaTime;
-    //        screenZ += velocityZ0 * Time.fixedDeltaTime;
-    //        //transform.position = new Vector3(screenX, screenY, screenZ);
-    //        transform.position = new Vector3((screenX - xOffSet), (screenY - screenZ - yOffSet), 0);
-    //    }
-    //}
-    //#endregion
-
 }
