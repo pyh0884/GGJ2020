@@ -50,6 +50,7 @@ MonoBehaviour:
   spawnPos: {x: 0, y: 0, z: 0}
   RecorderManager: {fileID: 41658521102286630, guid: a8599cae2d2cca84a9a17ee718da6419,
     type: 3}
+  pauseMenu: {fileID: 0}
 --- !u!114 &2364117758425533540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +85,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7786463688678936373}
     m_Modifications:
+    - target: {fileID: 481381624190457090, guid: 98ad0b19a1c174d8095f2fe4377a94da,
+        type: 3}
+      propertyPath: m_Name
+      value: Restart
+      objectReference: {fileID: 0}
     - target: {fileID: 639310659406642100, guid: 98ad0b19a1c174d8095f2fe4377a94da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -138,6 +144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639713244806539165, guid: 98ad0b19a1c174d8095f2fe4377a94da,
+        type: 3}
+      propertyPath: m_Name
+      value: Continue
       objectReference: {fileID: 0}
     - target: {fileID: 5986504189610022351, guid: 98ad0b19a1c174d8095f2fe4377a94da,
         type: 3}
