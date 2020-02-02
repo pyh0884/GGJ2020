@@ -92,15 +92,15 @@ public class PlayerController : CharacterController
         anim.SetTrigger("Die");
         playerRigidbody2D.velocity = Vector2.zero;
         controllable = false;
-        respawn();
     }
+    
     public void respawn()
     {
         Time.timeScale = 0;
         gm.AddTurn();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
+    
     void TryJump()
     {
         if (Time.timeScale != 0 && controllable)
