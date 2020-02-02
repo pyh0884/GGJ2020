@@ -160,8 +160,8 @@ public class PlayerController : CharacterController
         ///////// test begin ////////////////
         if (Input.GetKeyDown(KeyCode.Y))
         {
+            am.Play("Die");
             die();
-            
         }
 
         //////// test end //////////////

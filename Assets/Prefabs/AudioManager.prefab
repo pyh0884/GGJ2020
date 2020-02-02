@@ -44,171 +44,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audios:
-  - name: BGM0
-    clip: {fileID: 8300000, guid: a983ae7a3f1ebdc4887c5f7022711e2e, type: 3}
-    volume: 0.15
+  - name: BGM
+    clip: {fileID: 8300000, guid: c64c956624c78d44ea9b5a43bc68cdf0, type: 3}
+    volume: 0.5
     pitch: 1
     loop: 1
     source: {fileID: 0}
-    mute: 1
+    mute: 0
     mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: BGM1
-    clip: {fileID: 8300000, guid: c0feb9eb90a703f41bab01cd1aa94cc4, type: 3}
-    volume: 0.15
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-    mute: 1
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: BGM2
-    clip: {fileID: 8300000, guid: 86647fa4917251e4c8d36aba148e2751, type: 3}
-    volume: 0.15
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-    mute: 1
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: BGM3
-    clip: {fileID: 8300000, guid: 7d71e13a2bc33ae4b82d2186dc533535, type: 3}
-    volume: 0.15
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-    mute: 1
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: BGM4
-    clip: {fileID: 8300000, guid: b9c735f6b22c6b444bcbc142973189e2, type: 3}
-    volume: 0.15
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-    mute: 1
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Dash
-    clip: {fileID: 8300000, guid: 190db7b558604f54591707f5a618162b, type: 3}
-    volume: 0.15
+  - name: Throw
+    clip: {fileID: 8300000, guid: f7c27919dfd21284a97353a8d505980c, type: 3}
+    volume: 0.7
     pitch: 1
     loop: 0
     source: {fileID: 0}
     mute: 0
     mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Stone
-    clip: {fileID: 8300000, guid: bb7e2d332e152a344b1c110905c32875, type: 3}
-    volume: 0.15
+  - name: Jump
+    clip: {fileID: 8300000, guid: 4f6ea956a4786494c96209a84bc6a466, type: 3}
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
     mute: 0
     mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: BossLand
-    clip: {fileID: 8300000, guid: 4064e37ef26729d47bb779c3d0b6f5b7, type: 3}
-    volume: 0.15
+  - name: Die
+    clip: {fileID: 8300000, guid: 5d3d421a9e75bce438bb288579db5cfa, type: 3}
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
     mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Fire
-    clip: {fileID: 8300000, guid: 66e582c6ed4b46c48b3e4306e2298297, type: 3}
-    volume: 0.8
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: BossAttack
-    clip: {fileID: 8300000, guid: 678838eaf915d284080e9517e0319e38, type: 3}
-    volume: 0.8
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Teleport
-    clip: {fileID: 8300000, guid: 97d16f96e03b5e1498e0e34a9ee91a54, type: 3}
-    volume: 0.8
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Laser
-    clip: {fileID: 8300000, guid: 5bb82716ba39cb54292592c811430ef5, type: 3}
-    volume: 0.8
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: PlayerRun
-    clip: {fileID: 8300000, guid: c92c2f92bac4cdc4aacf9b96b00afbe5, type: 3}
-    volume: 0.8
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-    mute: 1
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Hit
-    clip: {fileID: 8300000, guid: 3da791559fbbe494e84eb3ba7872cdc2, type: 3}
-    volume: 0.6
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Nothing
-    clip: {fileID: 8300000, guid: 5a636c67c66cd274c8652564c49e92c8, type: 3}
-    volume: 0.8
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: PlayerLand
-    clip: {fileID: 8300000, guid: 5dc1bd721c9f6224eb3c77fd2dbb5aa7, type: 3}
-    volume: 0.8
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Yahaha
-    clip: {fileID: 8300000, guid: 98e47403c1fe950468c1bed69960f46a, type: 3}
-    volume: 0.8
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Dici
-    clip: {fileID: 8300000, guid: 9aabab69ddbf4e949a24f189bbd1acc1, type: 3}
-    volume: 0.8
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Throw1
-    clip: {fileID: 8300000, guid: db78ac9217ee1b340b57376fca9b6873, type: 3}
-    volume: 0.8
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Throw2
-    clip: {fileID: 8300000, guid: db78ac9217ee1b340b57376fca9b6873, type: 3}
-    volume: 0.8
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    mute: 0
-    mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
-  - name: Final
-    clip: {fileID: 8300000, guid: 3788e2f4e95db12429d019d641fe83b6, type: 3}
-    volume: 0.15
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-    mute: 1
     mixer: {fileID: 24300002, guid: 919e4d4aa5052da4dbba6d59446019cd, type: 2}
