@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject RecorderManager;
     private GameObject RecorderInstance;
     private bool recorderChecked;
+    public GameObject pauseMenu;
     
 
     private void Awake()
@@ -95,7 +96,8 @@ public class GameManager : MonoBehaviour
         Destroy(RecorderInstance);
         recorderChecked=false;
         turn=0;
-        Respawn();
+        GetComponent<Trans>().QuickLoad(1);
+        GetComponent<Pause>().resume();
     }
 }
 

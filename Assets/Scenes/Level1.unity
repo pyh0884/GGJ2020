@@ -2014,20 +2014,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 255344700098081610, guid: 0fd0ebdbbe5b73e40910815706ab8287,
         type: 3}
-      propertyPath: RecorderManager
+      propertyPath: anim
       value: 
-      objectReference: {fileID: 41658521102286630, guid: a8599cae2d2cca84a9a17ee718da6419,
-        type: 3}
+      objectReference: {fileID: 201959616}
     - target: {fileID: 1266549416696563370, guid: 0fd0ebdbbe5b73e40910815706ab8287,
         type: 3}
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 5490208552057982498, guid: 0fd0ebdbbe5b73e40910815706ab8287,
+    - target: {fileID: 1646950380183534966, guid: 0fd0ebdbbe5b73e40910815706ab8287,
         type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: d0a614b9c05b96540b717609f9539ae6, type: 2}
+      propertyPath: m_Name
+      value: Continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2519703818790703081, guid: 0fd0ebdbbe5b73e40910815706ab8287,
+        type: 3}
+      propertyPath: m_Name
+      value: Restart
+      objectReference: {fileID: 0}
     - target: {fileID: 7786463688678936373, guid: 0fd0ebdbbe5b73e40910815706ab8287,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2081,6 +2085,11 @@ PrefabInstance:
     - target: {fileID: 7786463688678936373, guid: 0fd0ebdbbe5b73e40910815706ab8287,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036520819268593778, guid: 0fd0ebdbbe5b73e40910815706ab8287,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
