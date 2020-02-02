@@ -35,7 +35,6 @@ public class PlayerController : CharacterController
     private float VelocityZ = 1 / 1.2f + 10 * 1.2f;
     private float VelocityY;
     private float VelocityX;
-    private bool CannonSkill;
     public void CannonTrajectory()
     {
         TrajectoryLine.enabled = true;
@@ -69,21 +68,18 @@ public class PlayerController : CharacterController
     }
     void CannonUpdate()
     {
-        //Cannon按下左键蓄力
         if (CanShoot && Input.GetKey(KeyCode.Mouse0)) 
         {
             CannonPressed = true;
             CannonAiming = true;
             Bullet.transform.position = EmitPoint.transform.position;
         }
-        //Cannon松开左键发射
         if ((CanShoot && Input.GetKeyUp(KeyCode.Mouse0) && CannonPressed) /*|| (Mp <= 5 && isSniper && pressed)*/)
         {
             CannonShoot();
             am.Play("Throw");
         }
     }
-
     public bool JumpKey
     {
         get
@@ -91,17 +87,11 @@ public class PlayerController : CharacterController
             return Input.GetButtonDown("Jump");
         }
     }
-
     public void die()
     {
         anim.SetTrigger("Die");
         playerRigidbody2D.velocity = Vector2.zero;
         controllable = false;
-        // TODO: Start again
-
-        //GameOver.SetActive(true);
-        //CursorVis.SetActive(true);
-        //Destroy(gameObject);
     }
     public void respawn()
     {
@@ -114,18 +104,15 @@ public class PlayerController : CharacterController
     {
         if (Time.timeScale != 0 && controllable)
         {
-            if ((isGround) && JumpKey ) //((isGround || OnBoss) && JumpKey &&!isAttacking)
+            if ((isGround) && JumpKey )
             {
                 jumping = true;
                 Jump();
                 am.Play("Jump");
             }
-
             TryFalling();
-
         }
     }
-
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
@@ -136,35 +123,16 @@ public class PlayerController : CharacterController
     {
         Time.timeScale = 1;
         am = FindObjectOfType<AudioManager>();
-        //switch (SceneManager.GetActiveScene().buildIndex)
-        //{
-        //    case 3:
-        //        am.UnMute("BGM1");
-        //        break;
-        //    default:
-        //        break;
-        //}
     }
     void Update()
     {
-        //if (am == null)
-        //    am = FindObjectOfType<AudioManager>();
         CannonUpdate();
         TryJump();
-        //if (isGround)
-        //    playerRigidbody2D.gravityScale = 0;
-        //else playerRigidbody2D.gravityScale = 1;
-
-
-        // to test recorder, when pressing "Y", the player died.
-        ///////// test begin ////////////////
         if (Input.GetKeyDown(KeyCode.Y))
         {
             am.Play("Die");
             die();
         }
-
-        //////// test end //////////////
     }
     private void FixedUpdate()
     {
@@ -173,6 +141,5 @@ public class PlayerController : CharacterController
         {
             CannonTrajectory();
         }
-
     }
 }
