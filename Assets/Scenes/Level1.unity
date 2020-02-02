@@ -3319,16 +3319,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2539873072151740899, guid: 59eeff1c4d5229f40845142a18a1abe4,
-        type: 3}
-      propertyPath: audios.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539873072151740899, guid: 59eeff1c4d5229f40845142a18a1abe4,
-        type: 3}
-      propertyPath: audios.Array.data[0].name
-      value: BGM
-      objectReference: {fileID: 0}
     - target: {fileID: 5069263792081179939, guid: 59eeff1c4d5229f40845142a18a1abe4,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -6,6 +6,7 @@ public class CeilingLamp : MonoBehaviour
 {
     public bool canDrop;
     public float IdealMass = 100f;
+ 
 
     void Start()
     {
@@ -24,6 +25,15 @@ public class CeilingLamp : MonoBehaviour
             canDrop = false;
             GetComponent<Rigidbody2D>().isKinematic = false;
             GetComponent<Rigidbody2D>().mass = IdealMass;
+            
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 10)
+            FindObjectOfType<AudioManager>().Play("LampFall");
+    }
+
+   
 }
