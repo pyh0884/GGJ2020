@@ -9,6 +9,7 @@ public class StandOnTo : MonoBehaviour
     private GameObject player;
     private float timeCnt;
     private bool isQTE;
+    public GameObject QTEHint;
 
 
     void Update()
@@ -23,6 +24,7 @@ public class StandOnTo : MonoBehaviour
                 isQTE = false;
                 Recorder.isQTEJump = false;
                 Time.timeScale = 1;
+                QTEHint.SetActive(false);
             }
 
             // detect Input (Jump Action)
@@ -31,6 +33,7 @@ public class StandOnTo : MonoBehaviour
                 isQTE = false;
                 Recorder.isQTEJump = false;
                 Time.timeScale = 1;
+                QTEHint.SetActive(false);
                 player.GetComponent<PlayerController>().Jump();
             }
 
@@ -55,7 +58,8 @@ public class StandOnTo : MonoBehaviour
                 isQTE = true;
                 Recorder.isQTEJump = true;
                 timeCnt = Time.unscaledTime;
-                Time.timeScale = 0;
+            QTEHint.SetActive(true);
+            Time.timeScale = 0;
                 // TODO: Show QTE Hint
                 //Debug.Log("Press Jump to Jump!");
             //}
