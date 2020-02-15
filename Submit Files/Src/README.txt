@@ -1,0 +1,1 @@
+This is the Unity3D Assets Folder. The only package we use is the "Cinemachine", you can import it from the Package Manager and build your own game.

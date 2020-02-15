@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: 9df1d2c5dbfe9a947ad72fbf7dec8afc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5895448365241063215
+    second: keephug_0
+  - first:
+      213: 8984516320721248702
+    second: keephug_1
+  - first:
+      213: -4226115960017407162
+    second: keephug_2
+  - first:
+      213: -9174563858739621217
+    second: keephug_3
+  - first:
+      213: -8355786781137251996
+    second: keephug_4
+  - first:
+      213: 4950298623950286386
+    second: keephug_5
+  - first:
+      213: -992849004918184276
+    second: keephug_6
+  - first:
+      213: 8521177258103069174
+    second: keephug_7
+  - first:
+      213: -888263741777621524
+    second: keephug_8
+  - first:
+      213: 6188555350582335589
+    second: keephug_9
+  - first:
+      213: -6057154981616071490
+    second: keephug_10
+  - first:
+      213: -3601325326924460620
+    second: keephug_11
+  - first:
+      213: 63365812318826681
+    second: keephug_12
+  - first:
+      213: -6644867745640058507
+    second: keephug_13
+  - first:
+      213: 1457263112768805726
+    second: keephug_14
+  - first:
+      213: 3498566054840839314
+    second: keephug_15
+  - first:
+      213: 8972200948901901590
+    second: keephug_16
+  - first:
+      213: -866278863437623451
+    second: keephug_17
+  - first:
+      213: 1292812354205859397
+    second: keephug_18
+  - first:
+      213: -2320899458541748263
+    second: keephug_19
+  - first:
+      213: -1594711081785918711
+    second: keephug_20
+  - first:
+      213: 5591627799919606942
+    second: keephug_21
+  - first:
+      213: 5135396838094430881
+    second: keephug_22
+  - first:
+      213: -7803733261925400484
+    second: keephug_23
+  - first:
+      213: 6153465034253531368
+    second: keephug_24
+  - first:
+      213: 4626972052389630545
+    second: keephug_25
+  - first:
+      213: 18491242761012824
+    second: keephug_26
+  - first:
+      213: -7304804435339279321
+    second: keephug_27
+  - first:
+      213: -8331103678542904565
+    second: keephug_28
+  - first:
+      213: 2094349608466184750
+    second: keephug_29
+  - first:
+      213: -3358444358868538211
+    second: keephug_30
+  - first:
+      213: -1792812252741962221
+    second: keephug_31
+  - first:
+      213: 1360659733705195001
+    second: keephug_32
+  - first:
+      213: -4563851018005343313
+    second: keephug_33
+  - first:
+      213: 898416758752802975
+    second: keephug_34
+  - first:
+      213: 2742566184321908641
+    second: keephug_35
+  - first:
+      213: -6631310214668616664
+    second: keephug_36
+  - first:
+      213: -8756387636058878511
+    second: keephug_37
+  - first:
+      213: 1947501391705108009
+    second: keephug_38
+  - first:
+      213: 6074107192271736573
+    second: keephug_39
+  - first:
+      213: -8891851050656407811
+    second: keephug_40
+  - first:
+      213: -4998561755196894708
+    second: keephug_41
+  - first:
+      213: -6357564035512341855
+    second: keephug_42
+  - first:
+      213: 2167338763178641147
+    second: keephug_43
+  - first:
+      213: 7941024713318626372
+    second: keephug_44
+  - first:
+      213: -1576945380467112865
+    second: keephug_45
+  - first:
+      213: 6712312823819447772
+    second: keephug_46
+  - first:
+      213: -211429870667814618
+    second: keephug_47
+  - first:
+      213: 8450464511267365472
+    second: keephug_48
+  - first:
+      213: 6981264967089155142
+    second: keephug_49
+  - first:
+      213: 4017069183401730897
+    second: keephug_50
+  - first:
+      213: -1181707374376727001
+    second: keephug_51
+  - first:
+      213: -6829199036524833764
+    second: keephug_52
+  - first:
+      213: 1778061278388798901
+    second: keephug_53
+  - first:
+      213: 4642986969267802809
+    second: keephug_54
+  - first:
+      213: -8944850081544905516
+    second: keephug_55
+  - first:
+      213: 9119835241246701475
+    second: keephug_56
+  - first:
+      213: 5708807091363753527
+    second: keephug_57
+  - first:
+      213: 2282149154761980158
+    second: keephug_58
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: keephug_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 259
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27d9d18d07d0d150800000000000000
+      internalID: 5895448365241063215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keephug_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 259
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb12a4fddf96fac70800000000000000
+      internalID: 8984516320721248702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keephug_2
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 0
+        width: 259
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643bd8fdce1d955c0800000000000000
+      internalID: -4226115960017407162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keephug_3
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 0
+        width: 259
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9210b687c66da080800000000000000
+      internalID: -9174563858739621217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
